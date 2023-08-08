@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Layout</title>
+    <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=t1B9Dnu3ymknJtVOFXr8VQg_oaMkwA6plgOaDybMHPEbdYN4VyQ244bnWzkPfGXbUKTImqwiMgefpc9C4CeUiXeRpKe6a0RBVn78tvh-gfH-J2AXmhLv8rHqvZWaevsF9HX4Vz8jvPvXC0YakuNLqQ" charset="UTF-8"></script></head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Logo">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Digite aqui para pesquisar...">
+            <button onclick="search()">Pesquisar</button>
+        </div>
+        <div class="links">
+            <a href="#">Catálogo</a>
+            <a href="#">Perfil</a>
+            <div class="menu-button" onclick="toggleCategoryMenu()">
+                <img src="catalogo.jpg" alt="Menu">
+                <span>Menu</span>
+            </div>   
+        </div>
+    </div>
+    <div class="banner">
+        <img src="banner.jpg" alt="Banner">
+    </div>
+    <div class="produtos">
+        <div class="produto">
+            <img src="produto1.jpg" alt="Hamburguer">
+            <h3>Bull dog</h3>
+            <p>Descrição</p>
+            <button onclick="comprar('Hamburguer Tradicional')">Ver</button>
+        </div>
+        <div class="produto">
+            <img src="produto2.jpg" alt="Pizza">
+            <h3>Shih tzu</h3>
+            <p>Descrição</p>
+            <button onclick="comprar('Pizza Margherita')">Ver</button>
+        </div>
+        <div class="produto">
+            <img src="produto3.jpg" alt="Batata Frita">
+            <h3>Pit bull</h3>
+            <p>Descrição</p>
+            <button onclick="comprar('Batata Frita Crocante')">Ver</button>
+        </div>
+    </div>
+    <!-- Resto do seu código aqui -->
+
+    <script>
+        // Restante do seu código aqui
+
+        function search() {
+            var searchTerm = document.getElementById("searchInput").value;
+            // Aqui você pode implementar a lógica de pesquisa, por exemplo, redirecionando para uma página de resultados de pesquisa.
+            // Por enquanto, vamos apenas mostrar uma mensagem de alerta com o termo de pesquisa.
+            alert(`Você pesquisou por: ${searchTerm}`);
+        }
+    </script>
+</body>
+</html>
